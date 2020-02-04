@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Routing with Vue</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- add Vue.js and Vue Router here -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+</head>
+<body>
+    <main id="app">
+        <!-- these are our nav links = they get transpiled to anchor tage <a> -->
+        <router-link to="/">Go to Splash</router-link>
+        <router-link to="/app">Go to App</router-link>
+        
+        <!-- this is like a {{{ body }}} tag in Handlebars -->
+        <!-- our components get rendered here -->
+        <router-view></router-view>
+    </main>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
